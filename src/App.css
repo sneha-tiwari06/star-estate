@@ -1,0 +1,258 @@
+@media screen and (max-width: 600px) {
+  .modal-content {
+    width: 80%;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+    font-size: 14px;
+  }
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url(https://ecis.in/star-estate-webinar/assets/image1.jpg) center / cover no-repeat;
+  position: relative;
+  isolation: isolate;
+}
+.container::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+} 
+
+.image-hero {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.webinar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+  width: max-content;
+}
+
+.webinar::before,
+.webinar::after {
+  content: '';
+  flex: 1 0 100px;
+  border-bottom: 1px solid white;
+}
+.overlay {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0;
+  /* background: rgba(0, 0, 0, 0.5);  */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  font-size: 5rem;
+  text-align: center;
+
+}
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.attraction{
+  font-size: 1.5rem;
+  background-color: white;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  display: inline;
+  padding: .5rem;
+  font-weight: 600;
+}
+.subheading{
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+ 
+}
+.register-button {
+  margin: 1rem auto 0;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: black;
+  background-color: white; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register-button:hover {
+  background-color: white;
+}
+.border{
+  border: 0.1rem solid white;
+  padding: .5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.logo{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  width: 200px; 
+}
+.subheading.border-bottom {
+  border-bottom: 0.1rem solid white;
+}.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.register{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 20%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+  border-bottom: 1px solid #333; 
+}
+
+
+button {
+  background-color: rgb(22, 22, 22);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 500px) {
+  .logo {
+    top: 8px;
+    right: auto;
+    width: 150px;
+}
+  .text {
+    font-size: 2.3rem;
+  
+}
+.subheading {
+  font-size: 1.5rem;
+}
+.description {
+  margin-top: 3rem;
+}
+.border {
+  text-align: center;
+  width: 87%;
+  font-size: 1rem;
+  padding: .2rem;
+}
+.register-button{
+  bottom: 8%;
+}
+}
+@media only screen and (max-width: 1366px) {
+  .subheading {
+    font-size: 2.5rem;
+}
+.text {
+  font-size: 4rem;
+}
+.description {
+  margin-top: 2rem;
+}
+}
+@media (max-width: 1199.9px) {
+  html{
+    font-size: 87.5%;
+  }
+}
